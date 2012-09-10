@@ -13,11 +13,11 @@
 
 	<meta name="viewport" content="width=device-width">
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/css/style.css">
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<script>window.html5 || document.write('<script src="js/libs/html5.js"><\/script>')</script>
+	<script>window.html5 || document.write('<script src="/js/libs/html5.js"><\/script>')</script>
 	<![endif]-->
 </head>
 <body>
@@ -26,7 +26,7 @@
 <header>
 
 </header>
-<div role="main">
+<div role="main" class="main">
 
 </div>
 <footer>
@@ -34,9 +34,9 @@
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
-<script src="js/plugins.js"></script>
-<script src="js/script.js"></script>
+<script src="/js/min/script-ck.js"></script>
+
 </body>
 </html>
