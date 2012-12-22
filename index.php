@@ -13,12 +13,33 @@
 
 	<meta name="viewport" content="width=device-width">
 
-	<link rel="stylesheet" href="/css/style.css">
+	<!-- Uncomment and compiles stylesheets locally to the following files for production site -->
+	<!-- <link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css"> -->
 
-	<!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<script>window.html5 || document.write('<script src="/js/libs/html5.js"><\/script>')</script>
-	<![endif]-->
+	<!-- TEMPORARY Development use LESS JavaScript compiler -->
+	<link rel="stylesheet/less" type="text/css" href="less/normalize.less">
+	<link rel="stylesheet/less" type="text/css" href="less/style.less">
+	<script type="text/javascript" src="js/vendor/less.min.js"></script>
+
+	<script type="text/javascript" src="js/vendor/modernizr-2.6.2.custom.js"></script>
+	<script type="text/javascript">
+	(function () {
+		"use strict";
+		Modernizr.load({
+			'load': [
+				'js/vendor/jquery-1.8.2.min.js',
+				'js/vendor/jquery.hoverIntent.minified.js',
+				'js/scripts.js'
+			],
+			'complete': function () {
+				jQuery(window.projInit);
+				try { delete window.projInit; } catch (e) {}
+			}
+		});
+	}());
+	</script>
+
 </head>
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
@@ -33,10 +54,6 @@
 
 </footer>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-
-<script src="/js/min/script-ck.js"></script>
 
 </body>
 </html>

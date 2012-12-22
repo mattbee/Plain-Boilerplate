@@ -2,7 +2,15 @@
 
 */
 
+window.ntfInit = function () {
+	"use strict";
 
+
+
+
+
+
+}
 
 
 
