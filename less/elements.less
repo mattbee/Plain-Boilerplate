@@ -1,3 +1,32 @@
+.sprite(@left:0,@top:0,@height:25px,@width:25px,@color:transparent,@size-x: auto,@size-y: auto) {
+  background: @color url(../images/sprite.png) no-repeat @left @top;
+  background-size: @size-x @size-y;
+  display: block;
+  height: @height;
+  text-indent: -999em;
+  width: @width;
+}
+
+.bg-sprite (@left:0,@top:0,@height:25px,@width:25px,@color:transparent,@size-x: auto,@size-y: auto) {
+  background: @color url(../images/sprite.png) no-repeat @left @top;
+  background-size: @size-x @size-y;
+  display: block;
+  height: @height;
+  width: @width;
+}
+
+
+
+/*--------------------------------------------------=
+    Stu's mixins
+  -------------------------------------------------*/
+.ir{
+   font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
+
 /*---------------------------------------------------
     LESS Elements 0.6
   ---------------------------------------------------

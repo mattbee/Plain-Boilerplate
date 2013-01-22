@@ -2,7 +2,7 @@
 
 */
 
-window.ntfInit = function () {
+window.projInit = function () {
 	"use strict";
 
 

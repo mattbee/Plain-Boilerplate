@@ -14,23 +14,21 @@
 	<meta name="viewport" content="width=device-width">
 
 	<!-- Uncomment and compiles stylesheets locally to the following files for production site -->
-	<!-- <link rel="stylesheet" href="css/normalize.css" type="text/css">
-	<link rel="stylesheet" href="css/style.css" type="text/css"> -->
+	<!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
 
 	<!-- TEMPORARY Development use LESS JavaScript compiler -->
-	<link rel="stylesheet/less" type="text/css" href="less/normalize.less">
 	<link rel="stylesheet/less" type="text/css" href="less/style.less">
-	<script type="text/javascript" src="js/vendor/less.min.js"></script>
+	<script type="text/javascript" src="js/libs/less.min.js"></script>
 
-	<script type="text/javascript" src="js/vendor/modernizr-2.6.2.custom.js"></script>
+	<script type="text/javascript" src="js/libs/modernizr-2.6.2.custom.js"></script>
 	<script type="text/javascript">
 	(function () {
 		"use strict";
 		Modernizr.load({
 			'load': [
-				'js/vendor/jquery-1.8.2.min.js',
-				'js/vendor/jquery.hoverIntent.minified.js',
-				'js/scripts.js'
+				'js/libs/jquery-1.8.2.min.js',
+				'js/libs/jquery.hoverIntent.minified.js',
+				'js/script.js'
 			],
 			'complete': function () {
 				jQuery(window.projInit);
